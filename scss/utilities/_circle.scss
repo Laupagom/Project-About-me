@@ -1,0 +1,16 @@
+.circle {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: grey;
+    background: linear-gradient(143deg, #59D8D9, #330867);
+    background-size: 200% 150%;
+    animation: circle 10s ease infinite;
+}
+
+
+@keyframes circle {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
