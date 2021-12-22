@@ -292,7 +292,6 @@ label, .label {
   display: block;
   font-size: 0.9em;
   margin-bottom: 10px;
-  background-color: #1B201A;
 }
 label.checkbox, .label.checkbox {
   width: 100%;
@@ -338,7 +337,7 @@ label.checkbox, .label.checkbox {
   position: absolute;
   margin: 0px 0px 0px 15px;
   left: 120px;
-  top: 0px;
+  top: 7px;
   z-index: 0;
 }
 
@@ -378,7 +377,7 @@ label.checkbox, .label.checkbox {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  margin-right: 10px;
+  margin: 0px 5px 0px 10px;
   -webkit-box-shadow: inset 0 0 0 2px #30BBC5;
           box-shadow: inset 0 0 0 2px #30BBC5;
 }
@@ -391,7 +390,7 @@ label.checkbox, .label.checkbox {
   height: 10px;
   border-radius: 50%;
   position: absolute;
-  left: 5px;
+  left: 15px;
   top: 10px;
   opacity: 0;
   -webkit-transition: opacity eease 0.3s;
@@ -517,6 +516,7 @@ label.checkbox, .label.checkbox {
   background-repeat: no-repeat;
   background-position: right;
   background-size: auto;
+  z-index: -1;
 }
 
 .wrapper__text {
@@ -693,18 +693,23 @@ label.checkbox, .label.checkbox {
   display: flex;
 }
 
-.circle {
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background: grey;
+.floating {
   background: linear-gradient(143deg, #59D8D9, #330867);
+  -webkit-animation: candy 2s ease infinite;
+          animation: candy 2s ease infinite;
   background-size: 200% 150%;
-  -webkit-animation: circle 10s ease infinite;
-          animation: circle 10s ease infinite;
+  border-radius: 100%;
+  position: fixed;
+  width: 450px;
+  height: 450px;
+  -webkit-transition: all 10s;
+  transition: all 10s;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 
-@-webkit-keyframes circle {
+@-webkit-keyframes candy {
   0% {
     background-position: 0% 50%;
   }
@@ -716,7 +721,7 @@ label.checkbox, .label.checkbox {
   }
 }
 
-@keyframes circle {
+@keyframes candy {
   0% {
     background-position: 0% 50%;
   }

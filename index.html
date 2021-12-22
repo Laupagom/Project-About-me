@@ -10,6 +10,24 @@
 
 <!--MENU-->
 	<body>
+		<!--FLOATING-->
+		<div class="floating"></div>
+
+		<script>
+		const randomNumber = function (min, max) {
+		return Math.floor(Math.random() * (max - min + 1) + min);
+		}
+	
+		setInterval(() => {
+		const positionX = randomNumber(1, 100);
+		const positionY = randomNumber(1, 100);
+		const floating = document.querySelector('.floating');
+		
+		floating.style.left = `${positionX}%`;
+		floating.style.top = `${positionY}%`;
+		}, 5000);
+		</script>
+
 		<nav class="menu">
 			<a href="#" class="button__menu">Long out</a>
 			<h5 class="button__available">AVAILABLE TO WORK</h5>
@@ -39,7 +57,6 @@
 
 <!--WHO WE ARE-->
 <section>
-	<div class="circle"></div>
 </section>
 			<section class="content-width full__height grid">
 				<div class="grid__cell--50">
