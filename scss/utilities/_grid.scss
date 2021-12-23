@@ -48,9 +48,12 @@
 // MEDIA
 @media all and (max-width: 480px) {
     .grid {
-        &--50 {
-            flex: 0 0 calc(100%);
-        } 
+        display:flex;
         
+        &__cell {
+            &--50 {
+                flex: 0 0 calc(100%);
+            } 
+        }
     } 
 }
