@@ -1,0 +1,22 @@
+div.scrolling-limit{
+  width: 100%;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+div.scrolling{
+  position: relative;
+  -webkit-animation: scroll 15s infinite linear;;
+  -moz-animation: scroll 15s infinite linear;
+  -o-animation: scroll 15s infinite linear;
+  animation: scroll 15s infinite linear;
+}
+
+@keyframes scroll{
+    0%   {left: 100%;}
+    100% {left: -600px;}
+}
+@-webkit-keyframes scroll{
+    0%   {left: 100%;}
+    100% {left: -600px;}
+}

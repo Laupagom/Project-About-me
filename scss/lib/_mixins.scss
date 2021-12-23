@@ -6,14 +6,3 @@
     margin: 0px 0px;
     text-transform: $textTransform;
 }
- /*-------
-@mixin respond-to ($breakpoint) {
-    @if map-has-key ($breakpoint $resolution)
-    @content;
-}
-
-h1 {
-    @include respond-to (12)
-
-}
-----*/

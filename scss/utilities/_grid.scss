@@ -1,3 +1,4 @@
+@media all and (min-width: 851px) {
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -44,16 +45,46 @@
         }
     }
 }
+}
 
 // MEDIA
-@media all and (max-width: 480px) {
-    .grid {
-        display:flex;
-        
+@media all and (max-width: 850px) {
+    .grid {        
         &__cell {
+            &--85 {
+                flex: 0 0 calc(100%);
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+            &--75 {
+                flex: 0 0 calc(100%);
+                margin-bottom: $space;
+            }
+    
+            &--65 {
+                flex: 0 0 calc(100%);
+                margin-bottom: $space;
+            }
+    
             &--50 {
                 flex: 0 0 calc(100%);
-            } 
+                margin-bottom: $space;
+            }
+    
+            &--35 {
+                flex: 0 0 calc(100%);
+                margin-bottom: $space;
+            }
+    
+            &--25 {
+                flex: 0 0 calc(100%);
+                margin-bottom: $space;
+            }
+    
+            &--15 {
+                flex: 0 0 calc(100%);
+                margin-bottom: $space;
+            }
         }
     } 
 }

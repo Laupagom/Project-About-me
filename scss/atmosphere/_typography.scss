@@ -1,6 +1,9 @@
 h1,
 h2,
 h3,
+h4,
+h5,
+h6
 p {
   color: $colorfont;
 }
@@ -27,20 +30,32 @@ h1 {
     @include fontStyle (120px, 130px, migra, uppercase);
   }
 
+@media all and (max-width: 600px) {
+  h1 {
+    @include fontStyle (60px, 60px, migra, uppercase);
+  }
+}
+
 h2 {
     font-weight: $fontMigraExtraLight;
     @include fontStyle (70px, 85px, migra, uppercase);
   }
 
+@media all and (max-width: 900px) {
+  h2 {
+    @include fontStyle (50px, 50px, migra, uppercase);
+  }
+}  
+
 h3 {
     font-weight: $fontMigraExtraLight;
-    @include fontStyle (30px, 30px, migra, uppercase);
+    @include fontStyle (35px, 30px, migra, uppercase);
   }
 
 h4 {
     font-weight: $fontMigraExtraLight;
     letter-spacing: 1px;
-    @include fontStyle (24px, 40px, migra, none);
+    @include fontStyle (24px, 35px, migra, none);
   }
 
 h5 {
