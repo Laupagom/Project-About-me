@@ -856,6 +856,7 @@ input.sp__selector--5:checked ~ .sp-content .sp__slider > li:nth-child(5) {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
+  z-index: 2;
   text-decoration: none;
   position: relative;
   border: 1px solid #ffffff;
@@ -875,7 +876,7 @@ a {
 }
 
 a:hover {
-  color: #30BBC5;
+  background: #30BBC5;
 }
 
 .copyright {
