@@ -6,17 +6,18 @@
     background-size: auto;
     z-index: -1;
 }
+
 @media all and (min-width: 851px) {
-    .avatar-mobile {
+    .avatar__mobile {
         display:none;
     }
 }
 
 @media all and (max-width: 850px) {
     .avatar {
-    background-image: none;
-    .avatar-mobile {
-        width: 100%;
+        background-image: none;
+        .avatar__mobile {
+            width: 100%;
+        }
     }
-}
 }

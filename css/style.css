@@ -262,11 +262,15 @@ a.privacity {
 hr.divider {
   color: #ffffff;
 }
-hr.divider--footerunder {
+hr.divider__footer--under {
   margin-bottom: 120px;
 }
-hr.divider--space {
+hr.divider__space {
   margin-bottom: 120px;
+}
+
+.top__space {
+  margin-top: 60px;
 }
 
 .symbol {
@@ -405,10 +409,8 @@ label.checkbox, .label.checkbox {
   text-transform: none;
 }
 
-/* 
--Pseudoelementos: solo pueden llevarlos los elementos con contenido.
--Siempre tiene que llevar "content"
-*/
+/* Pseudoelementos: solo pueden llevarlos los elementos con contenido.
+Siempre tiene que llevar "content"*/
 /* CHECK */
 .radio__label::after {
   content: "";
@@ -446,7 +448,6 @@ label.checkbox, .label.checkbox {
   opacity: 1;
 }
 
-/* CHECKBOX */
 .checkbox {
   position: relative;
 }
@@ -476,7 +477,6 @@ label.checkbox, .label.checkbox {
   color: #30BBC5;
 }
 
-/* CHECK */
 .checkbox__label::before {
   background: url(../img/check-solid.svg) center 20px no-repeat white;
   content: "";
@@ -500,7 +500,6 @@ label.checkbox, .label.checkbox {
   content: "";
 }
 
-/* ESTILO LISTADOS */
 .code__items {
   margin: 1em;
   padding: 0;
@@ -563,10 +562,6 @@ label.checkbox, .label.checkbox {
   background: linear-gradient(180deg, rgba(27, 32, 26, 0) 55.83%, rgba(6, 210, 255, 0.1) 97.82%);
 }
 
-.top-space {
-  margin-top: 60px;
-}
-
 .scroll {
   -webkit-animation: simple-rotate 1s 1s linear infinite;
   animation: simple-rotate 5s 5s linear infinite;
@@ -583,7 +578,7 @@ label.checkbox, .label.checkbox {
 }
 
 @media all and (min-width: 851px) {
-  .avatar-mobile {
+  .avatar__mobile {
     display: none;
   }
 }
@@ -591,7 +586,7 @@ label.checkbox, .label.checkbox {
   .avatar {
     background-image: none;
   }
-  .avatar .avatar-mobile {
+  .avatar .avatar__mobile {
     width: 100%;
   }
 }

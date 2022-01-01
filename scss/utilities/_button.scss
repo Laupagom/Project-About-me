@@ -53,9 +53,9 @@ color: $colorfont;
     &:hover{
         background-color: $colorsymbol;
         border:1px solid $colorsymbol;
-  }
+    }
 
-  &--projects {
-    margin-left: $margin;
-} 
+    &--projects {
+        margin-left: $margin;
+    } 
 }

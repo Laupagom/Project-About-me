@@ -6,17 +6,16 @@
     -webkit-animation: simple-rotate 1s 1s linear infinite;
     animation: simple-rotate 2s 2s linear infinite;
     
-  
-  @-webkit-keyframes simple-rotate {
-    100% {
-      -webkit-transform: rotate(360deg);
+    @-webkit-keyframes simple-rotate {
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
     }
-    }
-  
-  @keyframes simple-rotate {
-    100% {
-      transform: rotate(360deg);
-      transform-origin: 50% 0% 0;
-    }
+    
+    @keyframes simple-rotate {
+        100% {
+          transform: rotate(360deg);
+          transform-origin: 50% 0% 0;
+        }
     }
 }

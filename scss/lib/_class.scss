@@ -1,3 +1,4 @@
+//MEDIA CONTENT
 @media all and (min-width: 850px) {
 
 .content-width {
@@ -8,7 +9,7 @@
 .paragraph-spacing {
     padding-left: $margin;
     padding-right: $margin;
-}
+    }
 }
 
 @media all and (min-width: 850px) {
@@ -30,7 +31,6 @@
     }
 }
 
-
 @media all and (max-width: 1110px) {
     .content-width {
         margin-left: $margin;
@@ -44,14 +44,9 @@
     .h4-destok {
         display: none;
     }
-    
-
 }
 
 .bgcolor-footer {
     background: linear-gradient(180deg, rgba(27, 32, 26, 0) 55.83%, rgba(6, 210, 255, 0.1) 97.82%);
 }
 
-.top-space {
-    margin-top: $unit;
-}

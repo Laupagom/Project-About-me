@@ -1,10 +1,15 @@
 hr.divider {
     color: $colorfont;
     
-    &--footerunder {
+    &__footer--under {
         margin-bottom: $space;
     }
-    &--space {
-    margin-bottom: $space;
+
+    &__space {
+        margin-bottom: $space;
+    }
 }
+
+.top__space {
+    margin-top: $unit;
 }

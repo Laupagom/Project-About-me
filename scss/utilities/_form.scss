@@ -42,118 +42,121 @@ a {
 }
 
 // styling form
-
 label, .label {
-  border: 0px;
-  display: block;
-  font-size: 0.9em;
-  margin-bottom: 10px;
-  
-  &.checkbox {
-    width: 100%;
-  }
+    border: 0px;
+    display: block;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    
+    &.checkbox {
+      width: 100%;
+    }
 }
 
 .field {
-  width: 100%;
-  background: none;
-  border: none;
-  font-weight: $fontQanelasRegular;
+    width: 100%;
+    background: none;
+    border: none;
+    font-weight: $fontQanelasRegular;
     @include fontStyle (15px, 20px, Qanelas-Regular, none);
-  color: $colorfont;
-  height: 30px;
+    color: $colorfont;
+    height: 30px;
 
-  &:focus {
-    border: 3px;
-  }
+    &:focus {
+      border: 3px;
+    }
 }
 
 .input {
-  border-bottom: 2px solid $colorsymbol;
-  margin: 15px;
+    border-bottom: 2px solid $colorsymbol;
+    margin: 15px;
 }
+
+
 
 //RADIO
-
 .radio {
-  display: flex;
-  margin-top: 8px;
-  position: relative;
-  flex-direction: row;
+    display: flex;
+    margin-top: 8px;
+    position: relative;
+    flex-direction: row;
 }
+
 .radio__field{
-  font-size:inherit;
-  position:absolute;
-  margin: 0px 0px 0px 15px;
-  left: 120px;
-  top: 7px;
-  z-index: 0;
+    font-size:inherit;
+    position:absolute;
+    margin: 0px 0px 0px 15px;
+    left: 120px;
+    top: 7px;
+    z-index: 0;
 }
 
 /* alinear el contenido texto en la línea del cuadrado */
 .radio__label {
-  color: white;
-  display: inline-flex;
-  align-items:center;
-  position: relative;
-  z-index: 2;
-  font-weight: $fontQanelasRegular;
-  @include fontStyle (16px, 15px, Qanelas-Regular, none);
+    color: white;
+    display: inline-flex;
+    align-items:center;
+    position: relative;
+    z-index: 2;
+    font-weight: $fontQanelasRegular;
+    @include fontStyle (16px, 15px, Qanelas-Regular, none);
 }
 
-/* 
--Pseudoelementos: solo pueden llevarlos los elementos con contenido.
--Siempre tiene que llevar "content"
-*/
+
+
+/* Pseudoelementos: solo pueden llevarlos los elementos con contenido.
+Siempre tiene que llevar "content"*/
 /* CHECK */
 .radio__label::after {
-  content: ""
+    content: ""
 }
 
 .radio__label::before {
-content: "";
-background-color: white;;
-display: inline-block;
-width: 20px;
-height: 20px;
-border-radius: 50%;
-margin: 0px 5px 0px 10px;
-box-shadow: inset 0 0 0 2px $colorsymbol;
+    content: "";
+    background-color: white;;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0px 5px 0px 10px;
+    box-shadow: inset 0 0 0 2px $colorsymbol;
 }
 
 /* cuando no está checkeado */
 .radio__field + .radio__label::after {
-  background-color: $colorsymbol;
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  position: absolute;
-  left: 15px;
-  top: 10px;
-  opacity: 0;
-  transition: opacity eease .3s;
+    background-color: $colorsymbol;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    opacity: 0;
+    transition: opacity eease .3s;
 }
 
 /* cuando está checkeado */
 .radio__field:checked + .radio__label::after {
-  opacity: 1;
+    opacity: 1;
   
 }
 
-/* CHECKBOX */
 
+
+//CHECKBOX
 .checkbox {
-  position: relative;
+    position: relative;
 }
 
 .checkbox__field{
-  font-size:inherit;
-  position:absolute;
-  left: -2px;
-  top: -3px;
-  z-index: 1;
+    font-size:inherit;
+    position:absolute;
+    left: -2px;
+    top: -3px;
+    z-index: 1;
 }
+
 /* alinear el contenido texto en la línea del cuadrado */
 .checkbox__label{
   display: inline-flex;
@@ -162,12 +165,15 @@ box-shadow: inset 0 0 0 2px $colorsymbol;
   z-index: 2;
 
 }
+
 /* cuadno el imput esté marcado quiero que el label tenga color X */ 
 .checkbox__field:checked + label div {
   color: $colorsymbol;
 }
  
-/* CHECK */
+
+
+//CHECK
 .checkbox__label::before {
 background: url(../img/check-solid.svg) center 20px no-repeat white;
 content: "";
@@ -194,7 +200,7 @@ content: ""
 
 
 
-/* ESTILO LISTADOS */
+//ESTILO LISTADOS
 .code__items{
   margin: 1em;
   padding:0;
