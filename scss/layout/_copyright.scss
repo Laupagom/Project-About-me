@@ -3,13 +3,20 @@
     padding: 20px;
     background-color: $colorbg;
 
-    .copy {
-        text-align: center;
-        justify-content: center; 
+    @media all and (max-width: 750px) {
+        display: block;
+    }
     
-        &:nth-child(2) {
-            margin-left: auto;
-            display: flex;
+    @media all and (min-width: 751px) {
+
+        .copy {
+            text-align: center;
+            justify-content: center; 
+        
+            &:nth-child(2) {
+                margin-left: auto;
+                display: flex;
+            }
         }
     }
 }

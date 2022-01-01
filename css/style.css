@@ -85,37 +85,37 @@ img {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(100%);
             flex: 0 0 calc(100%);
-    margin-bottom: 120px;
+    padding-bottom: 120px;
   }
   .grid__cell--65 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(100%);
             flex: 0 0 calc(100%);
-    margin-bottom: 120px;
+    padding-bottom: 120px;
   }
   .grid__cell--50 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(100%);
             flex: 0 0 calc(100%);
-    margin-bottom: 120px;
+    padding-bottom: 120px;
   }
   .grid__cell--45 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(100%);
             flex: 0 0 calc(100%);
-    margin-bottom: 120px;
+    padding-bottom: 120px;
   }
   .grid__cell--25 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(100%);
             flex: 0 0 calc(100%);
-    margin-bottom: 120px;
+    padding-bottom: 120px;
   }
   .grid__cell--15 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(100%);
             flex: 0 0 calc(100%);
-    margin-bottom: 120px;
+    padding-bottom: 120px;
   }
 }
 .menu {
@@ -593,7 +593,7 @@ Siempre tiene que llevar "content"*/
 .sp__skills {
   position: relative;
   margin: -60px auto;
-  width: 90%;
+  width: 100%;
   min-width: 260px;
   height: 280px;
 }
@@ -882,17 +882,24 @@ a:hover {
   padding: 20px;
   background-color: #1B201A;
 }
-.copyright .copy {
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media all and (max-width: 750px) {
+  .copyright {
+    display: block;
+  }
 }
-.copyright .copy:nth-child(2) {
-  margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media all and (min-width: 751px) {
+  .copyright .copy {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .copyright .copy:nth-child(2) {
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .floating {
