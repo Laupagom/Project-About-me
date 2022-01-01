@@ -1,0 +1,154 @@
+/* estructura */
+.sp__skills {
+    position: relative;
+    margin:-60px auto;
+    width: 100%;
+    max-width: 1000px;
+    min-width: 260px;
+    height: 350px;
+  }
+  
+  /* contenido */
+  .sp-content {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 15px;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* radios */
+  .sp__skills input {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: 9px;
+    height: 9px;
+    z-index: 1001;
+    cursor: pointer;
+    opacity: 0;
+  }
+  
+  /* scroll circulos */
+  .sp__skills input + label {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    display: block;
+    z-index: 1000;
+    border: 3px solid $colorfont;
+    border-radius: 50%;
+    transition: background-color linear 0.1s;
+  }
+  
+  /* background scroll circles */
+  .sp__skills input:checked + label {
+    background-color: #30BBC5;
+    border:grey;
+  }
+  
+  /* circles */
+  .sp__selector--1, .button-label-1 {
+    margin-left: -36px;
+  }
+  
+  .sp__selector--2, .button-label-2 {
+    margin-left: -18px;
+  }
+  .sp__selector--4, .button-label-4 {
+    margin-left: 18px;
+  }
+  .sp__selector--5, .button-label-5 {
+    margin-left: 36px;
+  }
+  
+  /* ARROWS */
+  .sp__arrow {
+    position: absolute;
+    top: 50%;
+    width: 28px;
+    height: 38px;
+    margin-top: -19px;
+    display: none;
+    opacity: 0.8;
+    cursor: pointer;
+    z-index: 1000;
+    background: transparent url('https://i.imgur.com/yeMfI0Q.png') no-repeat;
+  }
+  
+  /* arrow right */
+  .sp__selector--1:checked ~ .sp__arrow.sp__a2,
+  .sp__selector--2:checked ~ .sp__arrow.sp__a3,
+  .sp__selector--3:checked ~ .sp__arrow.sp__a4,
+  .sp__selector--4:checked ~ .sp__arrow.sp__a5 {
+    right: 15px;
+    display: block;
+    background-position: top right;
+  }
+  
+  /* arrow left */
+  .sp__selector--2:checked ~ .sp__arrow.sp__a1,
+  .sp__selector--3:checked ~ .sp__arrow.sp__a2,
+  .sp__selector--4:checked ~ .sp__arrow.sp__a3,
+  .sp__selector--5:checked ~ .sp__arrow.sp__a4 {
+    left: 15px;
+    display: block;
+    background-position: top left;
+  }
+  
+  /* TEXT */
+  .sp__slider {
+    position: relative;
+    left: 0;
+    width: 500%;
+    height: 80%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: left ease-in 0.8s;
+  }
+  
+  .sp__slider > li {
+    color: $colorfont;
+    width: 20%;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0 60px;
+    float: left;
+    text-align: left;
+    opacity: 0.4;
+    transition: opactiy ease-in 0.4s 0.8s;
+  }
+  
+  input.sp__selector--1:checked ~ .sp-content .sp__slider {
+      left: 0;
+  }
+   
+  input.sp__selector--2:checked ~ .sp-content .sp__slider {
+      left: -100%;
+  }
+   
+  input.sp__selector--3:checked ~ .sp-content .sp__slider {
+      left: -200%;
+  }
+   
+  input.sp__selector--4:checked ~ .sp-content .sp__slider {
+      left: -300%;
+  }
+   
+  input.sp__selector-5:checked ~ .sp-content .sp__slider {
+      left: -400%;
+  }
+  
+  /* opacity text */
+  input.sp__selector--1:checked ~ .sp-content .sp__slider > li:first-child,
+  input.sp__selector--2:checked ~ .sp-content .sp__slider > li:nth-child(2),
+  input.sp__selector--3:checked ~ .sp-content .sp__slider > li:nth-child(3),
+  input.sp__selector--4:checked ~ .sp-content .sp__slider > li:nth-child(4),
+  input.sp__selector--5:checked ~ .sp-content .sp__slider > li:nth-child(5){
+      opacity: 1;
+  }
+  

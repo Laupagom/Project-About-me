@@ -6,11 +6,16 @@
     margin-right: $space;
 }
 
-.paragraph-spacing {
+.paragraph__margin {
     padding-left: $margin;
     padding-right: $margin;
     }
 }
+
+.top__space {
+    margin-top: $unit;
+}
+
 
 @media all and (min-width: 850px) {
     .full__height {

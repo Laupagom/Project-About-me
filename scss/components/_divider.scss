@@ -8,8 +8,9 @@ hr.divider {
     &__space {
         margin-bottom: $space;
     }
-}
 
-.top__space {
-    margin-top: $unit;
+    &__top--bottom {
+        margin-top: $margin;
+        margin-bottom: $margin;
+    }
 }
