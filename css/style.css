@@ -509,9 +509,9 @@ Siempre tiene que llevar "content"*/
   .content-width {
     margin-left: 120px;
     margin-right: 120px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .paragraph__margin {
