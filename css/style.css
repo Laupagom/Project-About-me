@@ -30,10 +30,10 @@ img {
         -ms-flex: 0 0 calc(100%);
             flex: 0 0 calc(100%);
   }
-  .grid__cell--85 {
+  .grid__cell--90 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(85%);
-            flex: 0 0 calc(85%);
+        -ms-flex: 0 0 calc(90%);
+            flex: 0 0 calc(90%);
     margin-bottom: 60px;
   }
   .grid__cell--75 {
@@ -74,7 +74,7 @@ img {
   }
 }
 @media all and (max-width: 850px) {
-  .grid__cell--85 {
+  .grid__cell--90 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(100%);
             flex: 0 0 calc(100%);
@@ -269,8 +269,8 @@ hr.divider__space {
   margin-bottom: 120px;
 }
 hr.divider__top--bottom {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .symbol {
@@ -313,7 +313,7 @@ html {
   color: #1B201A;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 480px) {
   .col {
     float: left;
     margin-bottom: 0;
@@ -506,14 +506,21 @@ Siempre tiene que llevar "content"*/
   .content-width {
     margin-left: 120px;
     margin-right: 120px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .paragraph__margin {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 .top__space {
+  margin-top: 120px;
+}
+
+.top__space--medium {
   margin-top: 60px;
 }
 
@@ -523,9 +530,6 @@ Siempre tiene que llevar "content"*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     position: relative;
   }
   .full__height--center {
@@ -545,8 +549,8 @@ Siempre tiene que llevar "content"*/
 }
 @media all and (max-width: 1110px) {
   .content-width {
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   .h4-margin {
@@ -557,11 +561,6 @@ Siempre tiene que llevar "content"*/
     display: none;
   }
 }
-.bgcolor-footer {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(55.83%, rgba(27, 32, 26, 0)), color-stop(97.82%, rgba(6, 210, 255, 0.1)));
-  background: linear-gradient(180deg, rgba(27, 32, 26, 0) 55.83%, rgba(6, 210, 255, 0.1) 97.82%);
-}
-
 .scroll {
   -webkit-animation: simple-rotate 1s 1s linear infinite;
   animation: simple-rotate 5s 5s linear infinite;
@@ -596,7 +595,7 @@ Siempre tiene que llevar "content"*/
   margin: -60px auto;
   width: 90%;
   min-width: 260px;
-  height: 350px;
+  height: 280px;
 }
 
 /* contenido */
@@ -865,7 +864,7 @@ input.sp__selector--5:checked ~ .sp-content .sp__slider > li:nth-child(5) {
   border: 1px solid #30BBC5;
 }
 .button__footer--projects {
-  margin-left: 25px;
+  margin-left: 30px;
 }
 
 a {
@@ -934,4 +933,8 @@ a:hover {
   100% {
     background-position: 0% 50%;
   }
+}
+.bgcolor-footer {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(55.83%, rgba(27, 32, 26, 0)), color-stop(97.82%, rgba(6, 210, 255, 0.1)));
+  background: linear-gradient(180deg, rgba(27, 32, 26, 0) 55.83%, rgba(6, 210, 255, 0.1) 97.82%);
 }

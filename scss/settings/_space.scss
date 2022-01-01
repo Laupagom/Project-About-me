@@ -4,15 +4,21 @@
 .content-width {
     margin-left: $space;
     margin-right: $space;
+    justify-content: center;
+
 }
 
 .paragraph__margin {
-    padding-left: $margin;
-    padding-right: $margin;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 }
 
 .top__space {
+    margin-top: $space;
+}
+
+.top__space--medium {
     margin-top: $unit;
 }
 
@@ -21,7 +27,6 @@
     .full__height {
         height: 100vh;
         display: flex;
-        justify-content: center;
         position: relative;
     
         &--center {
@@ -51,7 +56,4 @@
     }
 }
 
-.bgcolor-footer {
-    background: linear-gradient(180deg, rgba(27, 32, 26, 0) 55.83%, rgba(6, 210, 255, 0.1) 97.82%);
-}
 
