@@ -870,6 +870,14 @@ input.sp__selector--5:checked ~ .sp-content .sp__slider > li:nth-child(5) {
   margin-left: 25px;
 }
 
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #30BBC5;
+}
+
 .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
