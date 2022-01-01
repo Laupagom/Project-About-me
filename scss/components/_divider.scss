@@ -12,5 +12,9 @@ hr.divider {
     &__top--bottom {
         margin-top: $margin--medium;
         margin-bottom: $margin--medium;
+
+        &--margin {
+            margin-left: 30px;
+        }
     }
 }
