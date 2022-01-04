@@ -146,8 +146,8 @@ h1 {
   font-weight: 200;
   color: #ffffff;
   font-family: migra;
-  font-size: 120px;
-  line-height: 130px;
+  font-size: 160px;
+  line-height: 160px;
   margin: 0px 0px;
   text-transform: uppercase;
 }
@@ -519,12 +519,20 @@ Siempre tiene que llevar "content"*/
     padding-right: 30px;
   }
 }
-.top__space {
+.space__top {
   margin-top: 120px;
 }
-
-.top__space--medium {
+.space__top--medium {
   margin-top: 60px;
+}
+.space__bottom {
+  margin-bottom: 120px;
+}
+.space__bottom--medium {
+  margin-bottom: 60px;
+}
+.space__bottom--small {
+  margin-bottom: 50px;
 }
 
 @media all and (min-width: 850px) {

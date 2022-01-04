@@ -14,13 +14,30 @@
 }
 }
 
-.top__space {
-    margin-top: $space;
+.space {
+
+    &__top {
+        margin-top: $space;
+    }
+
+    &__top--medium {
+        margin-top: $unit;
+    }
+
+    &__bottom {
+        margin-bottom: $space;
+    }
+
+    &__bottom--medium {
+        margin-bottom: $unit;
+    }
+
+    &__bottom--small {
+        margin-bottom: $unit--medium;
+    }
 }
 
-.top__space--medium {
-    margin-top: $unit;
-}
+
 
 
 @media all and (min-width: 850px) {
