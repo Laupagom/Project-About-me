@@ -24,6 +24,10 @@
         margin-top: $unit;
     }
 
+    &__top--small {
+        margin-top: $margin--medium;
+    }    
+
     &__bottom {
         margin-bottom: $space;
     }
@@ -33,7 +37,7 @@
     }
 
     &__bottom--small {
-        margin-bottom: $unit--medium;
+        margin-bottom: $margin--medium;
     }
 }
 
@@ -62,10 +66,6 @@
     .content-width {
         margin-left: $margin;
         margin-right: $margin;
-    }
-
-    .h4-margin {
-        margin: 15px 0px;
     }
 
     .h4-destok {
