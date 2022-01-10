@@ -30,7 +30,7 @@ h1 {
     @include fontStyle (160px, 160px, migra, uppercase);
   }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
   h1 {
     @include fontStyle (60px, 60px, migra, uppercase);
   }
@@ -61,7 +61,7 @@ h4 {
 h5 {
     font-weight: $fontQanelasRegular;
     letter-spacing: 1px;
-    @include fontStyle (15px, 15px, Qanelas-Regular, uppercase);
+    @include fontStyle (15px, 33px, Qanelas-Regular, uppercase);
   }
 
 h6 {
@@ -74,7 +74,7 @@ p {
     @include fontStyle (16px, 30px, Qanelas-Regular, none);
   }
 
-a.button__menu,
+.button__menu,
 .button__footer {
     font-weight: $fontQanelasRegular;
     letter-spacing: 1px;
@@ -82,7 +82,7 @@ a.button__menu,
     width: fit-content;
 }
 
-a.privacity {
+.privacity {
   font-weight: $fontQanelasRegular;
   @include fontStyle (12px, 15px, Qanelas-Regular, none);
 }
