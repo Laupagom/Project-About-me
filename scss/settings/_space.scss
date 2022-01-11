@@ -14,11 +14,29 @@
 }
 }
 
-.space {
+//SPACE MEDIA
+@media all and (max-width: 849px) {
 
-    &__top {
-        margin-top: $space;
+    .space {
+        &__top {
+            margin-top: 0px;
+        }
     }
+}
+
+@media all and (min-width: 850px) {
+
+    .space {
+        &__top {
+            margin-top: $space;
+        }
+    }
+}
+
+
+
+//SPACE
+.space {
 
     &__top--medium {
         margin-top: $unit;

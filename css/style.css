@@ -152,7 +152,7 @@ h1 {
   text-transform: uppercase;
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 849px) {
   h1 {
     color: #ffffff;
     font-family: migra;
@@ -226,10 +226,11 @@ h6 {
 
 p {
   font-weight: 200;
+  letter-spacing: 0px;
   color: #ffffff;
   font-family: Qanelas-Regular;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 32px;
   margin: 0px 0px;
   text-transform: none;
 }
@@ -519,8 +520,15 @@ Siempre tiene que llevar "content"*/
     padding-right: 30px;
   }
 }
-.space__top {
-  margin-top: 120px;
+@media all and (max-width: 849px) {
+  .space__top {
+    margin-top: 0px;
+  }
+}
+@media all and (min-width: 850px) {
+  .space__top {
+    margin-top: 120px;
+  }
 }
 .space__top--medium {
   margin-top: 60px;
