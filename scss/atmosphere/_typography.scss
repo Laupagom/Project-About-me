@@ -27,7 +27,7 @@ p {
 
 h1 {
     font-weight: $fontMigraExtraLight;
-    @include fontStyle (160px, 160px, migra, uppercase);
+    @include fontStyle (140px, 160px, migra, uppercase);
   }
 
 @media all and (max-width: 849px) {

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="shortcut icon" href="icono/favicon.png"> 
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="css/style.css">
+		
+</head>
+<body>
+    <!--MENU-->
+	<body>
+		<!--FLOATING-->
+		<div class="floating"></div>
+
+		<script>
+		const randomNumber = function (min, max) {
+		return Math.floor(Math.random() * (max - min + 1) + min);
+		}
+	
+		setInterval(() => {
+		const positionX = randomNumber(1, 100);
+		const positionY = randomNumber(1, 100);
+		const floating = document.querySelector('.floating');
+		
+		floating.style.left = `${positionX}%`;
+		floating.style.top = `${positionY}%`;
+		}, 5000);
+		</script>
+
+		<nav class="menu">
+			<svg class="symbol" width="33" height="33" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M29.9 27.25C32.1 26.65 35 26.35 38.6 26.35C43.2 26.35 47 26.95 50 28.15C53 29.35 54.2 31.2 53.6 33.7L50.3 47.05L49.25 46.9C49.45 45.7 49.55 44.8 49.55 44.2C49.55 41.4 48.7 38.8 47 36.4C45.3 34 43.15 32.1 40.55 30.7C37.95 29.3 35.35 28.6 32.75 28.6C32.15 28.6 31.35 28.7 30.35 28.9C31.75 31.2 33 34.1 34.1 37.6C35.2 41 35.75 44.05 35.75 46.75C35.75 51.05 34.3 53.25 31.4 53.35L17.75 54.4L17.6 53.35C21.6 52.85 24.75 51 27.05 47.8C29.35 44.5 30.5 40.85 30.5 36.85C30.5 34.35 29.95 32 28.85 29.8C26.65 32.4 23.6 34.95 19.7 37.45C15.8 39.85 12.55 41.05 9.95 41.05C7.95 41.05 6.6 40.2 5.9 38.5L0.65 25.75L1.55 25.3C2.85 28 4.75 30.05 7.25 31.45C9.75 32.75 12.5 33.4 15.5 33.4C17.9 33.4 20.15 33 22.25 32.2C24.35 31.4 26.1 30.25 27.5 28.75C23.9 27.25 20.2 24.85 16.4 21.55C12.6 18.15 10.7 15.2 10.7 12.7C10.7 11.5 11.2 10.45 12.2 9.55L22.7 0.699994L23.45 1.44999C20.55 4.24999 19.1 7.64999 19.1 11.65C19.1 14.85 19.9 17.9 21.5 20.8C23.2 23.7 25.35 25.8 27.95 27.1C28.15 24.5 28.8 21.55 29.9 18.25C31 14.95 32.4 12.1 34.1 9.69999C35.8 7.3 37.55 6.1 39.35 6.1C40.15 6.1 40.9 6.3 41.6 6.7L53.3 14.05L52.7 14.8C50.8 13.7 48.7 13.15 46.4 13.15C42.4 13.15 38.75 14.6 35.45 17.5C32.25 20.4 30.4 23.65 29.9 27.25Z" fill="#30BBC5"/>
+				</svg>
+			<h5 class="button__available">AVAILABLE TO WORK</h5>
+			<a href="mailto: laura.parrenogoomez@gmail.com" class="button__menu">
+					SALUDA
+						<svg class="icono-hand" width="14" height="16" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12.9416 7.77869C13.173 9.59478 11.8865 11.3779 10.0721 11.7559L9.96726 10.9329C11.3377 10.6474 12.2942 9.32167 12.1194 7.95L12.9416 7.77869ZM0.182948 4.80462C-0.048457 2.98853 1.23804 1.20539 3.05246 0.827356L3.15733 1.65036C1.78692 1.93588 0.830415 3.26164 1.00519 4.6333L0.182948 4.80462ZM3.83273 2.53472L1.63825 5.58282C0.0982773 7.71728 0.463911 10.5868 2.45411 11.9858C4.4443 13.3847 7.3112 12.7874 8.85117 10.6529L12.231 5.95543C12.4668 5.64159 12.4115 5.20815 12.1087 4.99526C11.8058 4.78238 11.3728 4.8726 11.1384 5.19741L9.02454 8.12733L8.58571 7.81886L11.7135 3.48365C11.9478 3.15884 11.8926 2.72539 11.5897 2.51251C11.2869 2.29962 10.8484 2.39099 10.6085 2.71694L7.83268 6.5902L7.40341 6.26848L10.6876 1.70354C10.9219 1.37873 10.8667 0.945284 10.5639 0.732399C10.261 0.519515 9.82796 0.60974 9.59361 0.93455L6.29846 5.50177L5.86033 5.19879L8.49211 1.56394C8.73193 1.23799 8.6767 0.804544 8.36837 0.592802C8.06003 0.381059 7.63246 0.470143 7.39812 0.794953L3.75384 5.84608C4.53236 6.56815 4.63006 7.8207 3.94207 8.78073L3.50324 8.47226C4.0628 7.6967 3.92997 6.65423 3.20682 6.14591L2.99049 5.99385L4.93698 3.29594C5.17132 2.97113 5.11609 2.53769 4.81324 2.3248C4.5056 2.11855 4.07255 2.20877 3.83273 2.53472Z" fill="white"/>
+						</svg>
+			</a>
+		</nav>
+        <main>
+            <section class="content-width grid">
+				<div class="grid__cell--100">
+					<h2><span class="symbol">*</span>POLÍTICA DE PRIVACIDAD</h2>
+					<p class="paragraph__margin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat at repellendus, laudantium qui ea voluptas in accusamus modi sequi alias, quisquam rem deserunt corporis. Consectetur iste alias distinctio nemo architecto?</p>
+					<section>
+						<div class="arrow">
+							 <div class="arrow__down"></div>
+						</div>
+					</section>
+				</div>
+				<div class="grid__cell--45 flex-end grid">
+					<p class="paragraph__margin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat at repellendus, laudantium qui ea voluptas in accusamus modi sequi alias, quisquam rem deserunt corporis. Consectetur iste alias distinctio nemo architecto?</p>
+				</div>
+			</section>
+        </main>
+</body>
