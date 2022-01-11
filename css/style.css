@@ -957,12 +957,9 @@ a:hover {
     background-position: 0% 50%;
   }
 }
-.bgcolor-footer {
+footer {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(55.83%, rgba(27, 32, 26, 0)), color-stop(97.82%, rgba(6, 210, 255, 0.1)));
   background: linear-gradient(180deg, rgba(27, 32, 26, 0) 55.83%, rgba(6, 210, 255, 0.1) 97.82%);
   z-index: 2;
-}
-
-.bg-footer {
   background-color: #1B201A;
 }
