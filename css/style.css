@@ -897,19 +897,28 @@ input.sp__selector--5:checked ~ .sp-content .sp__slider > li:nth-child(5) {
   text-decoration: none;
   position: absolute;
   border: 1px solid #30BBC5;
-  margin: 15px 10px 0px 30px;
   color: #ffffff;
+}
+@media all and (min-width: 850px) {
+  .button__colorbg {
+    margin: 15px 10px 0px 30px;
+  }
+}
+@media all and (max-width: 850px) {
+  .button__colorbg {
+    margin: 15px 10px 0px 0px;
+  }
 }
 .button__colorbg:hover {
   background-color: transparent;
   border: 1px solid #ffffff;
 }
 
-a {
+.links {
   color: #ffffff;
 }
 
-a:hover {
+.links:hover {
   color: #30BBC5;
 }
 

@@ -68,8 +68,15 @@ color: $colorfont;
     text-decoration: none;
     position: absolute;
     border:1px solid $colorsymbol;
-    margin: 15px 10px 0px 30px;
     color: $colorfont; 
+
+    @media all and (min-width: 850px) {
+        margin: 15px 10px 0px 30px;
+    }
+
+    @media all and (max-width: 850px) {
+        margin: 15px 10px 0px 0px;
+    }
     
         &:hover{
             background-color: transparent;
@@ -79,10 +86,10 @@ color: $colorfont;
 
 
 
-a {
+.links {
     color: $colorfont;
   }
-  a:hover {
+  .links:hover {
     color: $colorsymbol;
   }
-  
+
