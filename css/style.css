@@ -885,10 +885,23 @@ input.sp__selector--5:checked ~ .sp-content .sp__slider > li:nth-child(5) {
 }
 
 .button__symbol {
+  padding: 7px 13px 7px 13px;
+  background: #30BBC5;
+  border-radius: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  z-index: 2;
+  text-decoration: none;
+  position: absolute;
+  border: 1px solid #30BBC5;
+  margin: 15px 10px 0px 0px;
   color: #ffffff;
 }
 .button__symbol:hover {
-  background: none;
+  background-color: transparent;
+  border: 1px solid #ffffff;
 }
 
 a {
@@ -896,7 +909,7 @@ a {
 }
 
 a:hover {
-  color: #30BBC5;
+  background: #30BBC5;
 }
 
 .copyright {

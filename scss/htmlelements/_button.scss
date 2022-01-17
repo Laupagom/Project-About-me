@@ -59,18 +59,30 @@ color: $colorfont;
 }
 
 .button__symbol {
+    padding: 7px 13px 7px 13px;
+    background: $colorsymbol;
+    border-radius: 35px;
+    display: flex;
+    text-align: center;
+    z-index: 2;
+    text-decoration: none;
+    position: absolute;
+    border:1px solid $colorsymbol;
+    margin: 15px 10px 0px 0px;
+    color: $colorfont; 
     
-    color:  $colorfont;
-
-    &:hover {
-        background: none;
+        &:hover{
+            background-color: transparent;
+            border:1px solid $colorborderbuttom;
+        }
     }
-}
+
+
 
 a {
     color:  $colorfont;
   }
   a:hover {
-    color: $colorsymbol;
+    background: $colorsymbol;
   }
   
