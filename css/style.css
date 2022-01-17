@@ -23,6 +23,11 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     /* "&" el padre */
   }
   .grid__cell--100 {
@@ -513,6 +518,7 @@ Siempre tiene que llevar "content"*/
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    max-width: 1300px;
   }
 
   .paragraph__margin {
