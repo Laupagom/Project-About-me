@@ -884,12 +884,19 @@ input.sp__selector--5:checked ~ .sp-content .sp__slider > li:nth-child(5) {
   border: 1px solid #30BBC5;
 }
 
+.button__symbol {
+  color: #ffffff;
+}
+.button__symbol:hover {
+  background: none;
+}
+
 a {
   color: #ffffff;
 }
 
 a:hover {
-  background: #30BBC5;
+  color: #30BBC5;
 }
 
 .copyright {
