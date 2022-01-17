@@ -236,7 +236,8 @@ p {
 }
 
 .button__menu,
-.button__footer {
+.button__footer,
+.button__colorbg {
   font-weight: 200;
   letter-spacing: 1px;
   color: #ffffff;
@@ -884,7 +885,7 @@ input.sp__selector--5:checked ~ .sp-content .sp__slider > li:nth-child(5) {
   border: 1px solid #30BBC5;
 }
 
-.button__symbol {
+.button__colorbg {
   padding: 7px 13px 7px 13px;
   background: #30BBC5;
   border-radius: 35px;
@@ -896,10 +897,10 @@ input.sp__selector--5:checked ~ .sp-content .sp__slider > li:nth-child(5) {
   text-decoration: none;
   position: absolute;
   border: 1px solid #30BBC5;
-  margin: 15px 10px 0px 0px;
+  margin: 15px 10px 0px 30px;
   color: #ffffff;
 }
-.button__symbol:hover {
+.button__colorbg:hover {
   background-color: transparent;
   border: 1px solid #ffffff;
 }
@@ -909,7 +910,7 @@ a {
 }
 
 a:hover {
-  background: #30BBC5;
+  color: #30BBC5;
 }
 
 .copyright {

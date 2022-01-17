@@ -76,7 +76,8 @@ p {
   }
 
 .button__menu,
-.button__footer {
+.button__footer,
+.button__colorbg {
     font-weight: $fontQanelasRegular;
     letter-spacing: 1px;
     @include fontStyle (15px, 16px, Qanelas-Regular, uppercase);

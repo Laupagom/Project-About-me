@@ -58,7 +58,7 @@ color: $colorfont;
     }
 }
 
-.button__symbol {
+.button__colorbg{
     padding: 7px 13px 7px 13px;
     background: $colorsymbol;
     border-radius: 35px;
@@ -68,7 +68,7 @@ color: $colorfont;
     text-decoration: none;
     position: absolute;
     border:1px solid $colorsymbol;
-    margin: 15px 10px 0px 0px;
+    margin: 15px 10px 0px 30px;
     color: $colorfont; 
     
         &:hover{
@@ -80,9 +80,9 @@ color: $colorfont;
 
 
 a {
-    color:  $colorfont;
+    color: $colorfont;
   }
   a:hover {
-    background: $colorsymbol;
+    color: $colorsymbol;
   }
   
