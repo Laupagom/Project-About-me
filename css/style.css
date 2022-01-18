@@ -923,12 +923,12 @@ input.sp__selector--5:checked ~ .sp-content .sp__slider > li:nth-child(5) {
   padding: 20px;
   background-color: #1B201A;
 }
-@media all and (max-width: 750px) {
+@media all and (max-width: 770px) {
   .copyright {
     display: block;
   }
 }
-@media all and (min-width: 751px) {
+@media all and (min-width: 769px) {
   .copyright .copy {
     text-align: center;
     -webkit-box-pack: center;
