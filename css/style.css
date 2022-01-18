@@ -147,7 +147,7 @@ h1 {
   color: #ffffff;
   font-family: migra;
   font-size: 140px;
-  line-height: 160px;
+  line-height: 140px;
   margin: 0px 0px;
   text-transform: uppercase;
 }
@@ -170,6 +170,7 @@ h2 {
   line-height: 85px;
   margin: 0px 0px;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 @media all and (max-width: 900px) {
@@ -180,6 +181,7 @@ h2 {
     line-height: 50px;
     margin: 0px 0px;
     text-transform: uppercase;
+    margin-bottom: 15px;
   }
 }
 h3 {
@@ -889,39 +891,21 @@ input.sp__selector--5:checked ~ .sp-content .sp__slider > li:nth-child(5) {
   text-decoration: none;
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
+  line-height: 40px;
+}
+@media all and (min-width: 849px) {
+  .button__link {
+    margin-left: 30px;
+  }
+}
+@media all and (max-width: 850px) {
+  .button__link {
+    margin-left: 0px;
+  }
 }
 .button__link:hover {
   color: #30BBC5;
   border-bottom: 1px solid #30BBC5;
-}
-
-.button__colorbg {
-  padding: 7px 13px 7px 13px;
-  background: #30BBC5;
-  border-radius: 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  z-index: 2;
-  text-decoration: none;
-  position: absolute;
-  border: 1px solid #30BBC5;
-  color: #ffffff;
-}
-@media all and (min-width: 850px) {
-  .button__colorbg {
-    margin: 15px 10px 0px 30px;
-  }
-}
-@media all and (max-width: 850px) {
-  .button__colorbg {
-    margin: 15px 10px 0px 0px;
-  }
-}
-.button__colorbg:hover {
-  background-color: transparent;
-  border: 1px solid #ffffff;
 }
 
 .links {

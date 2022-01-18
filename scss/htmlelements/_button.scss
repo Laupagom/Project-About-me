@@ -62,40 +62,21 @@ color: $colorfont;
     text-decoration: none; 
     color: $colorfont;
     border-bottom: 1px solid $colorfont; 
+    line-height: 40px;
 
+    @media all and (min-width: 849px) {
+        margin-left: 30px;
+    }
+
+    @media all and (max-width: 850px) {
+        margin-left: 0px;
+    }
+    
     &:hover{
         color: $colorsymbol;
         border-bottom: 1px solid $colorsymbol;
     }
 }
-
-.button__colorbg{
-    padding: 7px 13px 7px 13px;
-    background: $colorsymbol;
-    border-radius: 35px;
-    display: flex;
-    text-align: center;
-    z-index: 2;
-    text-decoration: none;
-    position: absolute;
-    border:1px solid $colorsymbol;
-    color: $colorfont; 
-
-    @media all and (min-width: 850px) {
-        margin: 15px 10px 0px 30px;
-    }
-
-    @media all and (max-width: 850px) {
-        margin: 15px 10px 0px 0px;
-    }
-    
-        &:hover{
-            background-color: transparent;
-            border:1px solid $colorborderbuttom;
-        }
-    }
-
-
 
 .links {
     color: $colorfont;
