@@ -58,6 +58,17 @@ color: $colorfont;
     }
 }
 
+.button__link {
+    text-decoration: none; 
+    color: $colorfont;
+    border-bottom: 1px solid $colorfont; 
+
+    &:hover{
+        color: $colorsymbol;
+        border-bottom: 1px solid $colorsymbol;
+    }
+}
+
 .button__colorbg{
     padding: 7px 13px 7px 13px;
     background: $colorsymbol;

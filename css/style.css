@@ -885,6 +885,16 @@ input.sp__selector--5:checked ~ .sp-content .sp__slider > li:nth-child(5) {
   border: 1px solid #30BBC5;
 }
 
+.button__link {
+  text-decoration: none;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+.button__link:hover {
+  color: #30BBC5;
+  border-bottom: 1px solid #30BBC5;
+}
+
 .button__colorbg {
   padding: 7px 13px 7px 13px;
   background: #30BBC5;
