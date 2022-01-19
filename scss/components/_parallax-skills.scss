@@ -80,8 +80,8 @@
   /* arrow right */
   .sp__selector--1:checked ~ .sp__arrow.sp__a2,
   .sp__selector--2:checked ~ .sp__arrow.sp__a3,
-  .sp__selector--3:checked ~ .sp__arrow.sp__a4,
-  .sp__selector--4:checked ~ .sp__arrow.sp__a5 {
+  .sp__selector--3:checked ~ .sp__arrow.sp__a1
+  {
     right: 0px;
     display: block;
     background-position: top right;
@@ -89,9 +89,8 @@
   
   /* arrow left */
   .sp__selector--2:checked ~ .sp__arrow.sp__a1,
-  .sp__selector--3:checked ~ .sp__arrow.sp__a2,
-  .sp__selector--4:checked ~ .sp__arrow.sp__a3,
-  .sp__selector--5:checked ~ .sp__arrow.sp__a4 {
+  .sp__selector--3:checked ~ .sp__arrow.sp__a2
+  {
     left: 0px;
     display: block;
     background-position: top left;
@@ -131,21 +130,13 @@
   input.sp__selector--3:checked ~ .sp-content .sp__slider {
       left: -200%;
   }
-   
-  input.sp__selector--4:checked ~ .sp-content .sp__slider {
-      left: -300%;
-  }
-   
-  input.sp__selector--5:checked ~ .sp-content .sp__slider {
-      left: -400%;
-  }
+
   
   /* opacity text */
   input.sp__selector--1:checked ~ .sp-content .sp__slider > li:first-child,
   input.sp__selector--2:checked ~ .sp-content .sp__slider > li:nth-child(2),
-  input.sp__selector--3:checked ~ .sp-content .sp__slider > li:nth-child(3),
-  input.sp__selector--4:checked ~ .sp-content .sp__slider > li:nth-child(4),
-  input.sp__selector--5:checked ~ .sp-content .sp__slider > li:nth-child(5){
+  input.sp__selector--3:checked ~ .sp-content .sp__slider > li:nth-child(3)
+  {
       opacity: 1;
   }
   

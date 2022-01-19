@@ -50,22 +50,18 @@ label, .label {
 }
 
 .field {
-    width: 100%;
+    width: 98%;
     background: none;
     border: none;
     font-weight: $fontQanelasRegular;
     @include fontStyle (15px, 20px, Qanelas-Regular, none);
     color: $colorfont;
     height: 30px;
+    border-bottom: 2px solid $colorsymbol;
 
     &:focus {
-      border: 3px;
+      border: 2px solid $colorsymbol;;
     }
-}
-
-.input {
-    border-bottom: 2px solid $colorsymbol;
-    margin: 15px;
 }
 
 

@@ -360,7 +360,7 @@ label.checkbox, .label.checkbox {
 }
 
 .field {
-  width: 100%;
+  width: 98%;
   background: none;
   border: none;
   font-weight: 200;
@@ -372,14 +372,10 @@ label.checkbox, .label.checkbox {
   text-transform: none;
   color: #ffffff;
   height: 30px;
+  border-bottom: 2px solid #30BBC5;
 }
 .field:focus {
-  border: 3px;
-}
-
-.input {
-  border-bottom: 2px solid #30BBC5;
-  margin: 15px;
+  border: 2px solid #30BBC5;
 }
 
 .radio {
@@ -522,21 +518,21 @@ Siempre tiene que llevar "content"*/
 
 @media all and (min-width: 850px) {
   .content-width {
-    padding-left: 120px;
-    padding-right: 120px;
     margin-left: auto;
     margin-right: auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     max-width: 1300px;
-  }
-
-  .paragraph__margin {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
+.paragraph__margin {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 @media all and (max-width: 849px) {
   .space__top {
     margin-top: 0px;
@@ -712,8 +708,7 @@ Siempre tiene que llevar "content"*/
 /* arrow right */
 .sp__selector--1:checked ~ .sp__arrow.sp__a2,
 .sp__selector--2:checked ~ .sp__arrow.sp__a3,
-.sp__selector--3:checked ~ .sp__arrow.sp__a4,
-.sp__selector--4:checked ~ .sp__arrow.sp__a5 {
+.sp__selector--3:checked ~ .sp__arrow.sp__a1 {
   right: 0px;
   display: block;
   background-position: top right;
@@ -721,9 +716,7 @@ Siempre tiene que llevar "content"*/
 
 /* arrow left */
 .sp__selector--2:checked ~ .sp__arrow.sp__a1,
-.sp__selector--3:checked ~ .sp__arrow.sp__a2,
-.sp__selector--4:checked ~ .sp__arrow.sp__a3,
-.sp__selector--5:checked ~ .sp__arrow.sp__a4 {
+.sp__selector--3:checked ~ .sp__arrow.sp__a2 {
   left: 0px;
   display: block;
   background-position: top left;
@@ -767,20 +760,10 @@ input.sp__selector--3:checked ~ .sp-content .sp__slider {
   left: -200%;
 }
 
-input.sp__selector--4:checked ~ .sp-content .sp__slider {
-  left: -300%;
-}
-
-input.sp__selector--5:checked ~ .sp-content .sp__slider {
-  left: -400%;
-}
-
 /* opacity text */
 input.sp__selector--1:checked ~ .sp-content .sp__slider > li:first-child,
 input.sp__selector--2:checked ~ .sp-content .sp__slider > li:nth-child(2),
-input.sp__selector--3:checked ~ .sp-content .sp__slider > li:nth-child(3),
-input.sp__selector--4:checked ~ .sp-content .sp__slider > li:nth-child(4),
-input.sp__selector--5:checked ~ .sp-content .sp__slider > li:nth-child(5) {
+input.sp__selector--3:checked ~ .sp-content .sp__slider > li:nth-child(3) {
   opacity: 1;
 }
 
