@@ -23,6 +23,9 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     /* "&" el padre */
   }
   .grid__cell--100 {
@@ -152,7 +155,17 @@ h1 {
   text-transform: uppercase;
 }
 
-@media all and (max-width: 849px) {
+@media only screen and (max-width: 849px) and (min-width: 501px) {
+  h1 {
+    color: #ffffff;
+    font-family: migra;
+    font-size: 85px;
+    line-height: 100px;
+    margin: 0px 0px;
+    text-transform: uppercase;
+  }
+}
+@media all and (max-width: 500px) {
   h1 {
     color: #ffffff;
     font-family: migra;
@@ -284,8 +297,8 @@ hr.divider__top--bottom--margin {
   display: inline-block;
   color: #30BBC5;
   position: relative;
-  -webkit-transform-origin: 20% 20%;
-          transform-origin: 20% 20%;
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
   -webkit-animation: simple-rotate 1s 1s linear infinite;
   animation: simple-rotate 2s 2s linear infinite;
 }
@@ -298,8 +311,6 @@ hr.divider__top--bottom--margin {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-    -webkit-transform-origin: 50% 0% 0;
-            transform-origin: 50% 0% 0;
   }
 }
 
@@ -511,8 +522,10 @@ Siempre tiene que llevar "content"*/
 
 @media all and (min-width: 850px) {
   .content-width {
-    margin-left: 120px;
-    margin-right: 120px;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-left: auto;
+    margin-right: auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -772,12 +785,11 @@ input.sp__selector--5:checked ~ .sp-content .sp__slider > li:nth-child(5) {
 }
 
 .arrow {
+  bottom: 8.5em;
+  position: absolute;
   width: 25px;
   -webkit-animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
           animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
 }
 
 .arrow__down {
@@ -987,4 +999,43 @@ footer {
   background: linear-gradient(180deg, rgba(27, 32, 26, 0) 55.83%, rgba(6, 210, 255, 0.1) 97.82%);
   z-index: 2;
   background-color: #1B201A;
+}
+
+@keyframes fadeInUp {
+  from {
+    -webkit-transform: translate3d(0, 40px, 0);
+            transform: translate3d(0, 40px, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    -webkit-transform: translate3d(0, 40px, 0);
+            transform: translate3d(0, 40px, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+  opacity: 0;
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
 }

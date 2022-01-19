@@ -1,7 +1,8 @@
 .arrow {
+    bottom: 8.5em;
+    position: absolute;
     width: 25px;
     animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    align-items: flex-end;
 }
 
 .arrow__down {

@@ -30,7 +30,13 @@ h1 {
     @include fontStyle (140px, 140px, migra, uppercase);
   }
 
-@media all and (max-width: 849px) {
+  @media only screen and (max-width: 849px) and (min-width: 501px) {
+    h1 {
+      @include fontStyle (85px, 100px, migra, uppercase);
+    }
+  }
+
+@media all and (max-width: 500px) {
   h1 {
     @include fontStyle (60px, 60px, migra, uppercase);
   }
