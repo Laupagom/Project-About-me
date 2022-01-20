@@ -83,6 +83,13 @@ label, .label {
     z-index: 0;
 }
 
+@media all and (max-widht: 375px) {
+  .radio__field {
+    left: 115px;
+    top: 25px;
+}
+}
+
 /* alinear el contenido texto en la línea del cuadrado */
 .radio__label {
     color: white;
@@ -124,14 +131,20 @@ Siempre tiene que llevar "content"*/
     position: absolute;
     left: 15px;
     top: 10px;
+
     opacity: 0;
     transition: opacity eease .3s;
+}
+
+@media all and (max-width: 375px) {
+  .radio__field + .radio__label::after {
+    top: 27px;
+  }
 }
 
 /* cuando está checkeado */
 .radio__field:checked + .radio__label::after {
     opacity: 1;
-  
 }
 
 
@@ -141,7 +154,7 @@ Siempre tiene que llevar "content"*/
     position: relative;
 }
 
-.checkbox__field{
+.checkbox__field {
     font-size:inherit;
     position:absolute;
     left: -2px;
@@ -150,7 +163,7 @@ Siempre tiene que llevar "content"*/
 }
 
 /* alinear el contenido texto en la línea del cuadrado */
-.checkbox__label{
+.checkbox__label {
   display: inline-flex;
   align-items:center;
   position: relative;

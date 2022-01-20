@@ -69,7 +69,7 @@ h4 {
 h5 {
     font-weight: $fontQanelasRegular;
     letter-spacing: 1px;
-    @include fontStyle (15px, 33px, Qanelas-Regular, uppercase);
+    @include fontStyle (15px, 18px, Qanelas-Regular, uppercase);
   }
 
 h6 {

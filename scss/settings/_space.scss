@@ -37,6 +37,13 @@
     }
 }
 
+@media all and (max-width: 480px) {
+    .paragraph__margin {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
 
 
 //SPACE
