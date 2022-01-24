@@ -271,6 +271,7 @@ h5 {
     line-height: 24px;
     margin: 0px 0px;
     text-transform: none;
+    font-weight: 200;
   }
 }
 h6 {
@@ -291,7 +292,7 @@ p {
   line-height: 32px;
   margin: 0px 0px;
   text-transform: none;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .button__menu,
@@ -577,7 +578,6 @@ Siempre tiene que llevar "content"*/
 }
 
 .code__items {
-  margin: 1em;
   padding: 0;
   list-style: none;
 }
