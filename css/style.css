@@ -147,6 +147,7 @@ h6 p {
 
 @font-face {
   font-family: "Qanelas";
+  font-weight: 300;
   src: url("/scss/atmosphere/typography/qanelas/Qanelas-Regular.eot") format("eot"), url("/scss/atmosphere/typography/qanelas/Qanelas-Regular.ttf") format("ttf"), url("/scss/atmosphere/typography/qanelas/Qanelas-Regular.woff") format("woff"), url("/scss/atmosphere/typography/qanelas/Qanelas-Regular.woff2") format("woff2");
 }
 @font-face {
@@ -260,7 +261,6 @@ h5 {
   line-height: 18px;
   margin: 0px 0px;
   text-transform: none;
-  font-weight: 300;
 }
 
 @media all and (max-width: 450px) {
@@ -272,7 +272,6 @@ h5 {
     line-height: 24px;
     margin: 0px 0px;
     text-transform: none;
-    font-weight: 300;
   }
 }
 h6 {
@@ -293,7 +292,6 @@ p {
   line-height: 32px;
   margin: 0px 0px;
   text-transform: none;
-  font-weight: 300;
 }
 
 .button__menu,
@@ -728,7 +726,7 @@ Siempre tiene que llevar "content"*/
   margin: -60px auto;
   width: 100%;
   min-width: 260px;
-  height: 320px;
+  height: 350px;
 }
 
 /* contenido */

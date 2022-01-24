@@ -10,6 +10,7 @@ p {
 
 @font-face {
     font-family: 'Qanelas';
+    font-weight: 300;
     
     src: url('/scss/atmosphere/typography/qanelas/Qanelas-Regular.eot') format('eot'),
       url('/scss/atmosphere/typography/qanelas/Qanelas-Regular.ttf') format('ttf'),
@@ -88,13 +89,13 @@ h4 {
 h5 {
     font-weight: $fontQanelasRegular;
     letter-spacing: 1px;
-    @include fontStyle (15px, 18px, 300, Qanelas-Regular, none);
+    @include fontStyle (15px, 18px, Qanelas-Regular, none);
   }
 
 @media all and (max-width: 450px) {
   h5 {
     font-weight: $fontQanelasRegular;
-    @include fontStyle (15px, 24px, 300, Qanelas-Regular, none);
+    @include fontStyle (15px, 24px, Qanelas-Regular, none);
   }
 }
 
@@ -105,7 +106,7 @@ h6 {
 
 p {
     font-weight: $fontQanelasRegular;
-    @include fontStyle (16px, 32px, 300, Qanelas-Regular, none);
+    @include fontStyle (16px, 32px, Qanelas-Regular, none);
   }
 
 .button__menu,
