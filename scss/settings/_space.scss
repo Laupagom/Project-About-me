@@ -12,9 +12,23 @@
     }
 }
 
+    
+.cabecera {
+    @media all and (max-width: 849px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    padding-left: $unit;
+    padding-right: $unit;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .paragraph__margin {
     padding-left: 30px;
     padding-right: 30px;
+
 }
 
 
@@ -41,6 +55,10 @@
     .paragraph__margin {
         padding-left: 0px;
         padding-right: 0px;
+    }
+
+    .space__top--medium {
+        margin-top: 0px;
     }
 }
 
