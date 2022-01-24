@@ -46,7 +46,7 @@ h1 {
 
 @media all and (max-width: 500px) {
   h1 {
-    @include fontStyle (50px, 60px, migra, uppercase);
+    @include fontStyle (50px, 50px, migra, uppercase);
   }
 }
 
