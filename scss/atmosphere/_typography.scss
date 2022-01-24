@@ -90,12 +90,15 @@ h5 {
     font-weight: $fontQanelasRegular;
     letter-spacing: 1px;
     @include fontStyle (15px, 18px, Qanelas-Regular, none);
+    font-weight: 300;
   }
 
 @media all and (max-width: 450px) {
   h5 {
     font-weight: $fontQanelasRegular;
     @include fontStyle (15px, 24px, Qanelas-Regular, none);
+    font-weight: 300;
+
   }
 }
 
@@ -107,6 +110,8 @@ h6 {
 p {
     font-weight: $fontQanelasRegular;
     @include fontStyle (16px, 32px, Qanelas-Regular, none);
+    font-weight: 300;
+
   }
 
 .button__menu,
