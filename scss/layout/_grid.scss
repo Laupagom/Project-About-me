@@ -1,4 +1,4 @@
-@media all and (min-width: 851px) {
+@media all and (min-width: 850px) {
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -52,9 +52,14 @@
 
 
 // MEDIA
-@media all and (max-width: 850px) {
+@media all and (max-width: 849px) {
     .grid {        
         &__cell {
+
+            &--100 {
+                flex: 0 0 calc(100%);
+            }
+
             &--90 {
                 flex: 0 0 calc(100%);
                 margin-top: 30px;
