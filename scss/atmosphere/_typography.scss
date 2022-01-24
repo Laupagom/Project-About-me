@@ -11,18 +11,18 @@ p {
 @font-face {
     font-family: 'Qanelas';
     
-    src: url('typography/qanelas/Qanelas-Regular.eot') format('eot'),
-      url('typography/qanelas/Qanelas-Regular.ttf') format('ttf'),
-      url('typography/qanelas/Qanelas-Regular.woff') format('woff'),
-      url('typography/qanelas/Qanelas-Regular.woff2') format('woff2');
+    src: url('/scss/atmosphere/typography/qanelas/Qanelas-Regular.eot') format('eot'),
+      url('/scss/atmosphere/typography/qanelas/Qanelas-Regular.ttf') format('ttf'),
+      url('/scss/atmosphere/typography/qanelas/Qanelas-Regular.woff') format('woff'),
+      url('/scss/atmosphere/typography/qanelas/Qanelas-Regular.woff2') format('woff2');
   }
 
 @font-face {
     font-family: 'Migra';
     
-    src: url('typography/migra/Migra-Extralight.ttf') format('ttf'),
-      url('typography/migra/Migra-Extralight.woff') format('woff'),
-      url('typography/migra/Migra-Extralight.woff2') format('woff2');
+    src: url('/scss/atmosphere/typography/migra/Migra-Extralight.ttf') format('ttf'),
+      url('/scss/atmosphere/typography/migra/Migra-Extralight.woff') format('woff'),
+      url('/scss/atmosphere/typography/migra/Migra-Extralight.woff2') format('woff2');
   }
 
 h1 {
@@ -40,7 +40,7 @@ h1 {
 
   @media only screen and (max-width: 849px) and (min-width: 501px) {
     h1 {
-      @include fontStyle (85px, 100px, migra, uppercase);
+      @include fontStyle (80px, 100px, migra, uppercase);
     }
   }
 
