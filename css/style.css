@@ -534,7 +534,7 @@ Siempre tiene que llevar "content"*/
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    max-width: 1300px;
+    max-width: 1400px;
     padding-left: 60px;
     padding-right: 60px;
   }
