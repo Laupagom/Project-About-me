@@ -84,6 +84,14 @@ h5 {
     @include fontStyle (15px, 18px, Qanelas-Regular, uppercase);
   }
 
+@media all and (max-width: 450px) {
+  h5 {
+    font-weight: $fontQanelasRegular;
+    letter-spacing: 0px;
+    @include fontStyle (10px, 24px, Qanelas-Regular, uppercase);
+  }
+}
+
 h6 {
     font-weight: $fontQanelasRegular;
     @include fontStyle (12px, 15px, Qanelas-Regular, none);

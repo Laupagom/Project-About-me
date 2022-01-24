@@ -248,6 +248,18 @@ h5 {
   text-transform: uppercase;
 }
 
+@media all and (max-width: 450px) {
+  h5 {
+    font-weight: 200;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: Qanelas-Regular;
+    font-size: 10px;
+    line-height: 24px;
+    margin: 0px 0px;
+    text-transform: uppercase;
+  }
+}
 h6 {
   font-weight: 200;
   color: #ffffff;
@@ -652,6 +664,11 @@ Siempre tiene que llevar "content"*/
           justify-content: space-between;
 }
 
+@media all and (max-width: 1110px) {
+  .scroll {
+    display: none;
+  }
+}
 .avatar {
   max-width: 100%;
   background-image: url("../scss/utilities/img/img-abautme-laura-parreno.jpg");
@@ -891,6 +908,11 @@ input.sp__selector--3:checked ~ .sp-content .sp__slider > li:nth-child(3) {
   margin-right: 30px;
   letter-spacing: 1px;
   margin-top: 6px;
+}
+@media all and (max-width: 450px) {
+  .button__available {
+    margin-right: 10px;
+  }
 }
 
 .button__menu {
