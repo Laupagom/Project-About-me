@@ -177,7 +177,7 @@ h1 {
   h1 {
     color: #ffffff;
     font-family: migra;
-    font-size: 80px;
+    font-size: 85px;
     line-height: 100px;
     margin: 0px 0px;
     text-transform: uppercase;
@@ -187,7 +187,7 @@ h1 {
   h1 {
     color: #ffffff;
     font-family: migra;
-    font-size: 60px;
+    font-size: 55px;
     line-height: 60px;
     margin: 0px 0px;
     text-transform: uppercase;
@@ -205,11 +205,23 @@ h2 {
   display: inline;
 }
 
-@media all and (max-width: 900px) {
+@media only screen and (max-width: 900px) and (min-width: 500px) {
   h2 {
     color: #ffffff;
     font-family: migra;
     font-size: 50px;
+    line-height: 50px;
+    margin: 0px 0px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: inline;
+  }
+}
+@media all and (max-width: 499px) {
+  h2 {
+    color: #ffffff;
+    font-family: migra;
+    font-size: 40px;
     line-height: 50px;
     margin: 0px 0px;
     text-transform: uppercase;
