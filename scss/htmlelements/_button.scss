@@ -10,13 +10,11 @@
     margin-left: auto;
     display: flex;
     color: $colorsymbol;
-    bottom: -0.7em;
     margin-right: 30px;
-    letter-spacing: 1px;
-    margin-top: 6px;
+    float: right;
 
     @media all and (max-width: 450px) {
-        margin-right: 10px;
+        margin-right: 30px;
 
     }
 
