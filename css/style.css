@@ -311,6 +311,7 @@ p {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  font-weight: 300;
 }
 
 .privacity {
@@ -867,6 +868,13 @@ input.sp__selector--1:checked ~ .sp-content .sp__slider > li:first-child,
 input.sp__selector--2:checked ~ .sp-content .sp__slider > li:nth-child(2),
 input.sp__selector--3:checked ~ .sp-content .sp__slider > li:nth-child(3) {
   opacity: 1;
+}
+
+.arrow__up-down {
+  fill: #ffffff;
+}
+.arrow__up-down:hover {
+  fill: #30BBC5;
 }
 
 .arrow {

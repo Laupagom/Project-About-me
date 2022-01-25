@@ -1,3 +1,11 @@
+.arrow__up-down {
+    fill: $colorfont;
+
+    &:hover {
+        fill: $colorsymbol;
+    }
+}
+
 .arrow {
     bottom: 8.5em;
     position: absolute;

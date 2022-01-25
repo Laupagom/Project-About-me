@@ -12,18 +12,18 @@ p {
     font-family: 'Qanelas';
     font-weight: 300;
     
-    src: url('../scss/atmosphere/typography/qanelas/Qanelas-Regular.eot') format('eot'),
-      url('../scss/atmosphere/typography/qanelas/Qanelas-Regular.ttf') format('ttf'),
-      url('../scss/atmosphere/typography/qanelas/Qanelas-Regular.woff') format('woff'),
-      url('../scss/atmosphere/typography/qanelas/Qanelas-Regular.woff2') format('woff2');
+    src: url('/scss/atmosphere/typography/qanelas/Qanelas-Regular.eot') format('eot'),
+      url('/scss/atmosphere/typography/qanelas/Qanelas-Regular.ttf') format('ttf'),
+      url('/scss/atmosphere/typography/qanelas/Qanelas-Regular.woff') format('woff'),
+      url('/scss/atmosphere/typography/qanelas/Qanelas-Regular.woff2') format('woff2');
   }
 
 @font-face {
     font-family: 'Migra';
     
-    src: url('../scss/atmosphere/typography/migra/Migra-Extralight.ttf') format('ttf'),
-      url('../scss/atmosphere/typography/migra/Migra-Extralight.woff') format('woff'),
-      url('../scss/atmosphere/typography/migra/Migra-Extralight.woff2') format('woff2');
+    src: url('/scss/atmosphere/typography/migra/Migra-Extralight.ttf') format('ttf'),
+      url('/scss/atmosphere/typography/migra/Migra-Extralight.woff') format('woff'),
+      url('/scss/atmosphere/typography/migra/Migra-Extralight.woff2') format('woff2');
   }
 
 h1 {
@@ -121,7 +121,6 @@ p {
     letter-spacing: 1px;
     @include fontStyle (15px, 16px, Qanelas-Regular, uppercase);
     width: fit-content;
-    font-weight: 300;
 }
 
 .privacity {
