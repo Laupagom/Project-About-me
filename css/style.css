@@ -558,7 +558,7 @@ Siempre tiene que llevar "content"*/
 }
 
 .checkbox__label::before {
-  background: url(../img/check-solid.svg) center 20px no-repeat white;
+  background: center 20px no-repeat white;
   content: "";
   display: inline-block;
   width: 15px;
