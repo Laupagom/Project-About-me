@@ -29,7 +29,7 @@ p {
 h1 {
     font-weight: $fontMigraExtraLight;
     @include fontStyle (180px, 200px, migra, uppercase);
-  }
+}
 
 
   @media only screen and (max-width: 1500px) and (min-width: 850px) {

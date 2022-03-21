@@ -69,7 +69,7 @@ color: $colorfont;
     border-bottom: 1px solid $colorfont; 
     line-height: 40px;
 
-    @media all and (min-width: 849px) {
+    @media all and (max: 849px) {
         margin-left: 30px;
     }
 
